@@ -16,7 +16,7 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 ## Changed on package blu_print_pos
-  // to make width and height responcive
+    to make width and height responcive
 - [enum.dart](https://github.com/abdalmuneim/bluetooth_print/files/11179627/enum.txt)
   
 - [blue_print_pos.dart](https://github.com/abdalmuneim/bluetooth_print/files/11179636/blue_print_pos.txt)
