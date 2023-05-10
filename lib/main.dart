@@ -16,18 +16,7 @@ class FlutterBlueApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(color: Colors.lightBlue, home: MyWidget()
-        /* StreamBuilder<BluetoothState>(
-          stream: FlutterBlue.instance.state,
-          initialData: BluetoothState.unknown,
-          builder: (c, AsyncSnapshot<BluetoothState> snapshot) {
-            final state = snapshot.data;
-            if (state == BluetoothState.on) {
-              return const FindDevicesScreen();
-            }
-            return BluetoothOffScreen(state: state);
-          }), */
-        );
+    return const MaterialApp(color: Colors.lightBlue, home: MyWidget());
   }
 }
 
