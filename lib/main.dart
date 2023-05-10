@@ -63,15 +63,23 @@ class _MyWidgetState extends State<MyWidget> {
           final d = devices[index];
           return Padding(
             padding: const EdgeInsets.only(left: 18.0),
-            child: Row(
+            child: Column(
               children: [
-                Text((index + 1).toString()),
-                Expanded(
-                  child: ListTile(
-                    title: Text(d.name == "" ? "No name" : d.name),
-                    subtitle: Text(d.id),
-                  ),
+                /// devices
+                Row(
+                  children: [
+                    Text((index + 1).toString()),
+                    Expanded(
+                      child: ListTile(
+                        title: Text(d.name == "" ? "No name" : d.name),
+                        subtitle: Text(d.id),
+                      ),
+                    ),
+                  ],
                 ),
+                index == devices.length - 1 && isScan
+                    ? const CircularProgressIndicator()
+                    : const SizedBox(),
               ],
             ),
           );
